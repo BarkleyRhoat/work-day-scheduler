@@ -21,3 +21,12 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+
+function updateDate() {
+  var dateDisplay = document.getElementById("currentDay");
+  var currentDate = new Date();
+  var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  var formattedDate = currentDate.toLocaleDateString(undefined, options);
+  dateDisplay.textContent = formattedDate;
+}
+updateDate();
