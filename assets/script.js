@@ -82,11 +82,11 @@ localStorage.setItem(hour, userInput);
 loadSavedData();
 
  // code to display the current date in the header of the page.
-function updateDate() {
-  var dateDisplay = $("currentDay");
+$(function updateDate(){
+  var dateDisplay = $("#currentDay");
   var currentDate = new Date();
   var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
   var formattedDate = currentDate.toLocaleDateString(undefined, options);
   dateDisplay.text(formattedDate);
-}
+})
 updateDate();
