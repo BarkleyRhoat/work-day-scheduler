@@ -1,12 +1,3 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
-$(function () {
-
-
- 
-});
-
 var currentHour = dayjs().hour();
 
 // looping through blocks to see if they match up to current hour 
